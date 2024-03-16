@@ -63,9 +63,10 @@ header .fa-bars:hover{
 
 
 header .fa-bars {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: var(--min-color);
     cursor: pointer;
+    display: none;
 }
 
 
@@ -77,3 +78,36 @@ header .fa-bars {
 
 
 
+
+
+
+
+
+/* media query */
+@media(max-width:850px){
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: fixed;
+        /* top: 10rem;*/ top: 1000rem ;left: 0; 
+        text-align: center;
+        background: rgba(10, 10, 9, 0.6);
+        width: 100%;
+
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 0.3rem 0;
+        padding: 1rem;
+        font-size: 2rem;
+        color: var(--min-color);
+
+    }
+
+    header .navbar a:hover{
+        background: var(--min-color);
+    }
+}
