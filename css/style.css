@@ -57,14 +57,15 @@ header .navbar a{
 }
 
 header .navbar a:hover,
-header .barsIcon:hover{
-    color: blue;
+header .fa-bars:hover{
+    color: blue
 }
 
-header .barsIcon{
-    
-    cursor: pointer;
 
+header .fa-bars {
+    font-size: 2.8rem;
+    color: var(--min-color);
+    cursor: pointer;
 }
 
 
