@@ -98,6 +98,10 @@ header .fa-bars {
 
     }
 
+    header .navbar.active {
+        top: 7.5rem;
+    }
+
     header .navbar a{
         display: block;
         margin: 0.3rem 0;
