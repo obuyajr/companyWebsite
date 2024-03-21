@@ -65,7 +65,7 @@ html{
 }
 
 section {
-    padding: 0.1rem 0.1%;
+    padding: 3rem 9%;
 }
 
 header{
@@ -168,7 +168,7 @@ header .fa-bars {
 .home .swiper-slide .image img{
     width: 130rem;
     height: 60%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .about .box .content h3{
@@ -187,6 +187,95 @@ header .fa-bars {
     font-size: 2.2rem;
 }
 
+.services .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    gap: 0.8rem;
+    margin-top: 5rem;
+}
+
+.services .row .box{
+    text-align: center;
+    color: var(--th-color);
+    padding: 4rem;
+    border-radius: 0.8rem;
+}
+.services .row .box i{
+    font-size: 3.5rem;
+    
+}
+.services .row .box h3{
+    font-size: 2.3rem;
+    margin: 1.5rem 0;
+}
+
+.services .row .box p{
+    font-size: 1.5rem;
+   
+}
+
+.services .row .box:hover{
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2) ;
+    background: #eee;
+}
+
+
+.portfolio .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
+    gap: 1rem;
+    margin: 6rem auto;
+    width: 90%;
+
+}
+
+
+.portfolio .row .box{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .row .box:hover img{
+    transform: translateY(-100%);
+}
+
+.portfolio .row .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .row .box:hover .content{
+   transform: translateY(0); 
+}
+
+.portfolio .row .box .content{
+    position: absolute;
+    top: 0;left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 3rem 2rem;
+    height: 100%;width: 100%;
+    transform: translateY(100%);
+    padding-top: 2.5rem;
+
+
+}
+
+.portfolio .row .box .content h3{
+    font-size: 2.5rem;
+    color: var(--sc-color);
+    margin-top: 4rem;
+}
+
+.portfolio .row .box .content p{
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--min-color);
+    margin-bottom: 0;
+    color: var(--min-color);
+}
 
 
 
@@ -236,4 +325,10 @@ header .fa-bars {
     .about .box .image img{
         width: 90%;
     }
+
+    .services .row{
+
+        grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
+    }
+
 }
