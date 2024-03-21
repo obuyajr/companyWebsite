@@ -249,6 +249,7 @@ header .fa-bars {
    transform: translateY(0); 
 }
 
+
 .portfolio .row .box .content{
     position: absolute;
     top: 0;left: 0;
@@ -276,6 +277,8 @@ header .fa-bars {
     margin-bottom: 0;
     color: var(--min-color);
 }
+
+
 
 
 
