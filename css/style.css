@@ -229,7 +229,6 @@ header .fa-bars {
 
 }
 
-
 .portfolio .row .box{
     position: relative;
     overflow: hidden;
@@ -248,8 +247,6 @@ header .fa-bars {
 .portfolio .row .box:hover .content{
    transform: translateY(0); 
 }
-
-
 
 
 .portfolio .row .box .content{
