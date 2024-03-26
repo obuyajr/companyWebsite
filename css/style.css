@@ -115,7 +115,6 @@ header .fa-bars {
     position: relative;
 }
 
-
 .home .home-slide .box::before{
     content: "";
     background: rgba(0, 0, 0, 0.6);
